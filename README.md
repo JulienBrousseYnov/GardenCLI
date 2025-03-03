@@ -21,9 +21,13 @@ II - Exécuter le programme
 🏡 Fonctionnalités
 
 ✔ Ajouter des plantes (Fleurs, Légumes, Arbres)
+
 ✔ Arroser les plantes pour améliorer leur santé
+
 ✔ Fertiliser les plantes pour stimuler leur croissance
+
 ✔ Entretenir les plantes pour les maintenir en bonne santé
+
 ✔ Afficher l'état du jardin en un coup d'œil
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -33,10 +37,15 @@ II - Exécuter le programme
 Lorsque vous lancez le programme (main.py), vous accédez à un menu :
 
 1. Arroser une plante
+
 2. Fertiliser une plante
+  
 3. Entretenir une plante
+  
 4. Afficher l'état du jardin
+  
 5. Ajouter une plante
+  
 6. Quitter
 
 💧 Arroser une plante
