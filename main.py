@@ -3,7 +3,6 @@ from types_plantes.fleur import Fleur
 from types_plantes.legume import Legume
 from types_plantes.arbre import Arbre
 
-
 def main():
     mon_jardin = Jardin()
 
@@ -22,7 +21,6 @@ def main():
         print("3. Entretenir une plante")
         print("4. Afficher l'état du jardin")
         print("5. Ajouter une plante")
-        print("6. Supprimer une plante")
         print("7. Quitter")
 
         choix = input("Choisissez une action (1-7) : ")
@@ -64,20 +62,12 @@ def main():
 
             else:
                 print("Choix invalide, veuillez réessayer.")
-        
-        elif choix == "6":
-            plante = input("Entrez le nom de la plante à supprimer : ")
-            if mon_jardin.supprimer_plante(plante):
-                print(f"{plante} a été supprimée du jardin.")
-            else:
-                print(f"{plante} n'a pas été trouvée dans le jardin.")
 
         elif choix == "7":
             print("Merci d'avoir joué !")
             break
         else:
             print("Choix invalide, veuillez réessayer.")
-
 
 if __name__ == "__main__":
     main()

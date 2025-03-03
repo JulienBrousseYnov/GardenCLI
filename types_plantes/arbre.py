@@ -6,5 +6,10 @@ class Arbre(Plante):
         self.hauteur_max = hauteur_max
 
     def afficher_etat(self):
-        super().afficher_etat()
-        print(f"Hauteur maximale: {self.hauteur_max} mètres")
+        print(f"{self.nom} - Santé: {self.sante} - Hauteur maximale: {self.hauteur_max}m")
+
+    def entretenir(self):
+        self.sante += 40
+        if self.sante > 100:
+            self.sante = 250
+        print(f"Entretenir {self.nom} - Santé après entretien: {self.sante}")

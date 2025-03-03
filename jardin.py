@@ -1,11 +1,3 @@
-from plante import Plante
-from types_plantes.fleur import Fleur
-from types_plantes.legume import Legume
-from types_plantes.arbre import Arbre
-from actions.arroser import arroser
-from actions.fertiliser import fertiliser
-from actions.entretenir import entretenir
-
 class Jardin:
     def __init__(self):
         self.plantes = []
@@ -14,20 +6,20 @@ class Jardin:
         self.plantes.append(plante)
 
     def afficher_jardin(self):
+        if not self.plantes:
+            print("Il n'y a pas de plantes dans le jardin.")
         for plante in self.plantes:
             plante.afficher_etat()
 
-    def interagir_avec_plante(self, nom_plante, action, *args):
+    def interagir_avec_plante(self, nom, action, quantite=None):
         for plante in self.plantes:
-            if plante.nom == nom_plante:
+            if plante.nom.lower() == nom.lower():
                 if action == "arroser":
-                    arroser(plante, args[0])
+                    plante.arroser(quantite)
                 elif action == "fertiliser":
-                    fertiliser(plante)
+                    plante.fertiliser()
                 elif action == "entretenir":
-                    entretenir(plante)
-                else:
-                    print("Action inconnue.")
+                    plante.entretenir()
                 break
         else:
             print("Plante non trouvée.")

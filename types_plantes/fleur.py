@@ -6,5 +6,10 @@ class Fleur(Plante):
         self.couleur = couleur
 
     def afficher_etat(self):
-        super().afficher_etat()
-        print(f"Couleur: {self.couleur}")
+        print(f"{self.nom} - Couleur: {self.couleur} - Santé: {self.sante}")
+
+    def entretenir(self):
+        self.sante += 5
+        if self.sante > 100:
+            self.sante = 50  # Assurez-vous que la santé ne dépasse pas 100
+        print(f"Entretenir {self.nom} - Santé après entretien: {self.sante}")
