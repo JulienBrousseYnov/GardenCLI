@@ -1,9 +1,11 @@
 🌿 GardenCLI 🌱
+
 GardenCLI est une application en ligne de commande qui permet de gérer un jardin virtuel. Ajoutez, entretenez et surveillez la santé de vos plantes pour créer un jardin florissant !
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 Installation
+
 I - Cloner le projet
 
 1 - git clone https://github.com/votre-utilisateur/GardenCLI.git
