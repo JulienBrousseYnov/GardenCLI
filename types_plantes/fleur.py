@@ -20,7 +20,7 @@ class Fleur(Plante):
         self.sante += + quantite
         if self.sante > 100:
             self.sante = 100
-        print(f"Arroser {self.nom} {self.sante} - Santé après arrosage: {self.sante}")
+        print(f"Arroser {self.nom} - Santé après arrosage: {self.sante}")
 
     def fertiliser(self):
         self.sante += 10
