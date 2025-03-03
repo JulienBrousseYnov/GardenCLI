@@ -9,6 +9,7 @@ GardenCLI est une application en ligne de commande qui permet de gérer un jardi
 I - Cloner le projet
 
 1 - git clone https://github.com/votre-utilisateur/GardenCLI.git
+
 2 - cd GardenCLI
 
 II - Exécuter le programme
